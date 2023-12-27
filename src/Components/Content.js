@@ -1,5 +1,7 @@
 import React from 'react';
 
+//using Event handling
+
 function Content (){
 
    function handleClick(e){
@@ -28,6 +30,15 @@ function Content (){
         )
 
     }
+
+    const handleClick3= (name) => {
+
+        return(
+        // alert('Double clicked')
+        console.log(`Yametteeeekuudaasssaaaiiiii ${name}`)
+        )
+
+    }
     
     return(
        <main>
@@ -42,6 +53,12 @@ function Content (){
        <button onClick={()=>handleClick2('Govalooo')}>
             Message!
        </button>
+       </div>
+       <div>
+        <button onDoubleClick={()=> handleClick3('onichan')}>
+                Double Click
+        </button>
+       
        </div>
        </main>
 
